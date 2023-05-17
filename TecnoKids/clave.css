@@ -1,0 +1,125 @@
+@keyframes fadeIn { 
+    from {  opacity: 0.1; } 
+  }
+  
+  
+  
+  .container{
+    
+  
+    
+    padding:0em 0em 5em 0em;
+  text-align: center;
+    
+   
+  }
+  
+  .trump_small {
+      background-size: 100% ;
+  
+      background-repeat:no-repeat;
+      background-image: url('tarjetaclave.png');
+      padding: 190px 300px;
+     
+  
+  
+      box-shadow:1px 5px 115px #000e8d,-1px -5px 115px blue;
+      margin-bottom:2em;
+      animation: fadeIn 1s infinite alternate;
+  }
+  
+  .page-header{
+    margin:4em 0 0 0;
+    padding:3em;
+  }
+  
+  .page-header>h1{
+    font-family:Georgia;
+    font-size:5em;
+    text-shadow:2px 1px 1px black,-1px -1px 100px blue;
+  
+  }  
+  
+  .subtitle{
+   
+    font-family:helvetica;
+    color:#657;
+    font-size:1.5em;
+    
+  }
+  
+  .container .jumbotron{
+   
+  /*   background-color: #ffb544; */
+    padding:0em;
+    padding-top:3em;
+    padding-bottom:3em;
+    margin-bottom:0;
+  }
+  
+  
+  .grd{
+    
+  
+  
+   opacity:.8;
+    
+  }
+  
+  h2#cout{ 
+    font-family:Times New Roman;
+    padding:1em;
+    font-style:italic;
+  
+  }
+  
+  p.author{
+    font-weight:bold;
+    margin-right:10%;
+    font-size:1.8em;
+  }
+  .trump{
+  
+    width:85%;
+    opacity:.75;
+  /*   border:1em solid 	#ff0000; */
+  }
+  
+  .badg{
+    font-size:1.5em; 
+    font-weight:bold;
+    color:orange;
+  }
+  
+  
+  h4{
+    font-weight:normal;
+    padding:1.5em 0 2em 1.5em;
+  }
+  
+  .panel-footer{
+     background-color: #797980;
+    color:white;
+    font-size:14px;
+    padding-top:2em;
+   
+  }
+  
+  a{color:blue;}
+  
+  
+  
+
+  
+ 
+  
+
+  
+  .list{
+    
+    background-color: #363636;
+    list-style-type: none;
+    color:white;
+    padding:5em 2em 2em 5em;
+    margin:0 ;
+  }

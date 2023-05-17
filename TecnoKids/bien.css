@@ -1,0 +1,8 @@
+#centrar{
+    position: absolute;
+  
+    width: 30%;
+    height: 40%;
+    Left: 55%;
+    transform: translateX(-50%);
+}
