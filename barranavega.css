@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+   }
+
+nav{
+    display: flex;
+    width: 100%;
+    background: #ffffff;
+   position: relative;
+   justify-content: space-between;
+    text-align: center;
+   padding: 50px 30px;
+
+   
+}
+
+nav .nombreempresa{
+font-size: 35px;
+font-weight: 800;
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+ nav ol{
+    display: flex;
+    List-style: none;
+    margin: auto 0;
+ }
+
+ nav ol li{
+    margin: 0 2px;
+ }
+
+ nav ol li a{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    Letter-spacing: 1px;
+    padding: 5px 10px;
+ }
+ 
+ nav ol li:hover a{
+    background: #0a5071;
+    color: #ffffff;
+ }
+ nav .barradebusqueda{
+    display: flex;
+    margin:  auto;
+    height: 35px;
+    line-height: 3500px;
+ }
+
+ @media screen and (min-width: 6000px) {
+   .barradebusqueda{
+   display:none;
+   }
+   }
+ 
+ nav .barradebusqueda input{
+     border: none;
+     outline: none;
+     background: #fff;
+     height: 100%;
+     padding: 0 10px;
+     font-size: 20px;
+     width: 350px;
+ }
+
+ nav .barradebusqueda span{
+    color:#000000;
+    font-size: 20px;
+   background: #fff;
+   height: 100%;
+   padding: 8px;
+   position: relative;
+   cursor:progress;
+   z-index: 0;
+ }
+
+
+nav .barradebusqueda span:hover::after{
+   width: 100%;
+}
+
+nav .bar{
+   position: relative;
+   margin: auto;
+   display: none;
+}
+nav .bar span{
+   position: absolute;
+   color: #fff;
+   font-size: 35px;
+}
+input[type="checkbox"]{
+   -webkit-appearance: none;
+  display: none;
+}
+
+@media screen and (max-width: 1250px){
+   nav{
+       display: block;
+       padding: 0;
+    }
+
+nav .nombreempresa{
+   display: inline-block;
+   padding: 15px 30px;
+}
+nav .barradebusqueda{
+   width: 100%;
+display: inline-flex;
+justify-content: center;
+margin-bottom: 15px;
+}
+nav .barradebusqueda input{
+   width: 90%;
+}
+nav ol{
+ display: flex;
+ flex-direction: column;
+ background: #fff;  
+ height: 0;
+ visibility: hidden;
+ transition: 0.3s;
+}
+nav ol li{
+   text-align: center;
+   transition: 0.3s 0.1s all;
+   opacity: 0;
+}
+nav ol li a{
+   color: #000;
+   font-size: 28px;
+   padding: 25px;
+   display: block;
+}
+nav ol li:nth-child(1){
+   transform: translateX(-150px);
+}
+nav ol li:nth-child(2){
+   transform: translateX(-200px);
+}
+nav ol li:nth-child(3){
+   transform: translateX(-250px);
+}
+nav ol li:nth-child(4){
+   transform: translateX(-300px);
+}
+
+nav .bar{
+   display: block;
+   position: absolute;
+   top: 20px;
+   right: 60px;
+   cursor: pointer;
+}
+nav .bar #times{
+   display: none;
+}
+#check:checked ~ nav .bar #times{
+   display: block;
+}
+#check:checked ~ nav .bar #bars{
+   display: none;
+}
+#check:checked ~ nav ol{
+   visibility: visible;
+   height: 465px;
+}
+#check:checked ~ nav ol li:nth-child(1),
+#check:checked ~ nav ol li:nth-child(2),
+#check:checked ~ nav ol li:nth-child(3),
+#check:checked ~ nav ol li:nth-child(4){
+   transform: translateX(0);
+   opacity: 1;
+}
+}
